@@ -7,10 +7,10 @@ import pandas as pd
 import plotly.express as px
 
 # Dataframes
-df_prices = pd.read_csv("Views/food_prices.csv")
-df_minMax = pd.read_csv("Views/MaxMinPrices_view.csv")
-df_Qcount = pd.read_csv("Views/QualityCount_view.csv")
-df_units = pd.read_csv("Views/UnitsUsed_view.csv")
+df_prices = pd.read_csv("food_prices.csv")
+df_minMax = pd.read_csv("MaxMinPrices_view.csv")
+df_Qcount = pd.read_csv("QualityCount_view.csv")
+df_units = pd.read_csv("UnitsUsed_view.csv")
 
 # initialise app
 stylesheet = ["styles.css"]
