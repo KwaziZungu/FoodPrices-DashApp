@@ -16,6 +16,7 @@ df_units = pd.read_csv("UnitsUsed_view.csv")
 stylesheet = ["styles.css"]
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 countries = ["South Africa", "Japan", "Sweden", "Canada", "Australia"]
 prices_stats = ["Lowest Price", "Average Price", "Highest Price"]
 
@@ -92,4 +93,4 @@ def update_graph2(selected):
 
 # Run app
 if __name__ == "__main__":
-    app.run_server(debug=False, host="0.0.0.0",port=8080)
+    app.run_server(debug=False)
